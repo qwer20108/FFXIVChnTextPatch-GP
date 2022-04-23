@@ -4,7 +4,6 @@ buildscript {
 		springBootVersion = '2.1.0.RELEASE'
 	}
 	repositories {
-		maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 		maven { url "https://repo.spring.io/milestone" }
 		mavenCentral()
 	}
@@ -34,7 +33,6 @@ compileJava {
 }
 
 repositories {
-	maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
 	maven { url "https://repo.spring.io/milestone" }
 	mavenCentral()
 }
@@ -52,6 +50,7 @@ dependencies {
 	compile("org.apache.httpcomponents:httpclient-cache:4.5.3")
 	compile("org.apache.httpcomponents:httpmime:4.5.3")
 	compile("org.apache.httpcomponents:fluent-hc:4.5.3")
+	compile("com.univocity:univocity-parsers:2.9.1")
 }
 
 mainClassName = "name.yumao.ffxiv.chn.FFXIVPatchMain"
