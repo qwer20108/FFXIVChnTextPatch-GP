@@ -10,3 +10,7 @@
 debug.*
 notes.txt
 *.jar
+
+.idea/
+.gradle
+build
