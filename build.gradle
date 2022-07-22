@@ -14,9 +14,13 @@ buildscript {
 	}
 }
 
-apply plugin: 'idea'
-apply plugin: 'java'
-apply plugin: 'application'
+
+plugins {
+	id 'java-library'
+	id 'application'
+	id 'idea'
+}
+
 
 sourceSets {
     main {
@@ -38,19 +42,19 @@ repositories {
 }
 
 dependencies {
-	testCompile(
+	testImplementation(
         'junit:junit:4.12'
     )
-	compile("com.jcraft:jzlib:1.1.3")
-	compile("org.nlpcn:nlp-lang:1.7.6")
-	compile("com.google.code.gson:gson:2.8.5")
-	compile("commons-codec:commons-codec:1.11")
-	compile("org.apache.httpcomponents:httpcore:4.4.6")
-	compile("org.apache.httpcomponents:httpclient:4.5.3")
-	compile("org.apache.httpcomponents:httpclient-cache:4.5.3")
-	compile("org.apache.httpcomponents:httpmime:4.5.3")
-	compile("org.apache.httpcomponents:fluent-hc:4.5.3")
-	compile("com.univocity:univocity-parsers:2.9.1")
+	implementation("com.jcraft:jzlib:1.1.3")
+	implementation("org.nlpcn:nlp-lang:1.7.6")
+	implementation("com.google.code.gson:gson:2.8.5")
+	implementation("commons-codec:commons-codec:1.11")
+	implementation("org.apache.httpcomponents:httpcore:4.4.6")
+	implementation("org.apache.httpcomponents:httpclient:4.5.3")
+	implementation("org.apache.httpcomponents:httpclient-cache:4.5.3")
+	implementation("org.apache.httpcomponents:httpmime:4.5.3")
+	implementation("org.apache.httpcomponents:fluent-hc:4.5.3")
+	implementation("com.univocity:univocity-parsers:2.9.1")
 }
 
 mainClassName = "name.yumao.ffxiv.chn.FFXIVPatchMain"
@@ -59,20 +63,20 @@ jar {
 	manifest {
 		attributes(
 				'Main-Class': 'org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader',
-				'Class-Path': './ ' + configurations.compile.collect { it.getName() }.join(' '),
+				'Class-Path': './ ' + configurations.compileClasspath.collect { it.getName() }.join(' '),
 				'Rsrc-Main-Class': mainClassName,
 		)
 	}
 	from {
 		// zip compile jar
-		configurations.compile.collect { it }
+		configurations.compileClasspath.collect { it }
 		// zip extra compile jar
 //		configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 	}
 }
 
 task copyLibs(type: Copy) {
-	from configurations.compile
+	from configurations.compileClasspath
 	from 'lib'
 	into 'build/lib'
 }
