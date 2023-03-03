@@ -26,9 +26,9 @@ int32,str,str
 21,TEXT_LUCKMB109_03310_SEQ_21,
 22,TEXT_LUCKMB109_03310_SEQ_22,
 23,TEXT_LUCKMB109_03310_SEQ_23,
-24,TEXT_LUCKMB109_03310_TODO_00,於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「菲奧」 (Feo Ul)
-25,TEXT_LUCKMB109_03310_TODO_01,"於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「菲奧幫幫我嘛」 (Please, Feo Ul, I need you)"
-26,TEXT_LUCKMB109_03310_TODO_02,"於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「我可愛又美麗的小樹枝菲奧」 (O loveliest of branches, please grant me your succor!)"
+24,TEXT_LUCKMB109_03310_TODO_00,於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「菲奧」
+25,TEXT_LUCKMB109_03310_TODO_01,於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「菲奧幫幫我嘛」
+26,TEXT_LUCKMB109_03310_TODO_02,於<hex:02280CFF05>EObj<hex:F61EAAE30103>在「說話」頻道下輸入<hex:02100103>「我可愛又美麗的小樹枝菲奧」
 27,TEXT_LUCKMB109_03310_TODO_03,和桑克瑞德對話
 28,TEXT_LUCKMB109_03310_TODO_04,再次和桑克瑞德對話
 29,TEXT_LUCKMB109_03310_TODO_05,
@@ -78,15 +78,15 @@ int32,str,str
 73,TEXT_LUCKMB109_03310_ALISAIE_000_035,和仙子族締結契約也太厲害了吧。
 74,TEXT_LUCKMB109_03310_THANCRED_000_040,就麻煩你把那個菲奧·烏兒叫出來吧，<hex:02100103>前提是他得願意出來……
 75,TEXT_LUCKMB109_03310_RYNE_000_045,呃……菲奧要是能成為我們的突破口就好了。
-76,TEXT_LUCKMB109_03310_SYSTEM_000_050,Feo Ul
+76,TEXT_LUCKMB109_03310_SYSTEM_000_050,菲奧
 77,TEXT_LUCKMB109_03310_SYSTEM_000_051,隱約可以聽到不知來自何處的聲音……
 78,TEXT_LUCKMB109_03310_FEOUL_000_052,(-菲奧·烏兒-)哼！<hex:02100103>我的小樹苗絕對是把我給忘了。
 79,TEXT_LUCKMB109_03310_FEOUL_000_053,(-菲奧·烏兒-)你叫我叫得那麼冷漠無情，根本就沒想依靠我吧！<hex:02100103>這種小樹苗我才不管呢！
 80,TEXT_LUCKMB109_03310_SYSTEM_000_054,在指定地點將聊天頻道設定為「說話」頻道後，<hex:02100103>使用鍵盤或軟鍵盤輸入「菲奧」來呼喚他吧。
-81,TEXT_LUCKMB109_03310_SYSTEM_000_060,"Please, Feo Ul, I need you"
+81,TEXT_LUCKMB109_03310_SYSTEM_000_060,菲奧幫幫我嘛
 82,TEXT_LUCKMB109_03310_FEOUL_000_061,(-菲奧·烏兒-)……不、不管就是不管！<hex:02100103>你叫我的時候一點真情實感都沒有！
 83,TEXT_LUCKMB109_03310_SYSTEM_000_062,在指定地點將聊天頻道設定為「說話」頻道後，<hex:02100103>使用鍵盤或軟鍵盤輸入「菲奧幫幫我嘛」來呼喚他吧。
-84,TEXT_LUCKMB109_03310_SYSTEM_000_070,"O loveliest of branches, please grant me your succor!"
+84,TEXT_LUCKMB109_03310_SYSTEM_000_070,我可愛又美麗的小樹枝菲奧
 85,TEXT_LUCKMB109_03310_SYSTEM_000_071,在指定地點將聊天頻道設定為「說話」頻道後，<hex:02100103>使用鍵盤或軟鍵盤輸入「我可愛又美麗的小樹枝菲奧」<hex:02100103>來呼喚他吧。
 86,TEXT_LUCKMB109_03310_ALPHINAUD_000_080,我們就按約定在這裡等你們回來，<hex:02100103>沒事，我們會看情況陪仙子族玩的。
 87,TEXT_LUCKMB109_03310_ALISAIE_000_085,替我跟於里昂熱問好。<hex:02100103>順便告訴他別老窩在這種難找的地方，<hex:02100103>趕緊來和我們匯合。
