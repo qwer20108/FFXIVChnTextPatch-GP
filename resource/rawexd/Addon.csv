@@ -8371,9 +8371,9 @@ int32,str
 9778,只顯示未獲得
 9779,無符合條件的幻卡。
 9780,引導教學
-9781,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>
-9782,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>
-9783,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
+9781,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
+9782,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
+9783,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
 9784,<hex:022825FF0A>PlaceName<hex:FF17><hex:022813FF0E>TerritoryType<hex:E8030603><hex:0103><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
 9785,<hex:026103E80303><hex:02100103>對局：<hex:02280CFF07>ObjStr<hex:E8020103>
 9786,<hex:02281CFF17>TripleTriadCompetition<hex:E8020103><hex:02100103>特等獎
@@ -8381,7 +8381,7 @@ int32,str
 9788,通過道具鑑定隨機獲得<hex:02100103><hex:02280AFF05>Item<hex:E8020103>
 9789,<hex:026103E80303><hex:02100103>用貨幣交換：<hex:02280CFF07>ObjStr<hex:E8020103>
 9790,<hex:022811FF0C>Achievement<hex:E8020203>
-9791,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03><hex:02100103>幸福兔財寶
+9791,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03><hex:02100103>幸福兔財寶
 9792,？？？？
 9793,最終成績
 9794,冠軍
@@ -9130,7 +9130,7 @@ int32,str
 10807,可對戰次數
 10808,參加大賽
 10809,大賽對戰受理期
-10810,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>
+10810,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
 10811,<hex:024804F201FA03><hex:024904F201FB03>※匹配條件中的「任務已完成」只有在曾經完成過對應任務時才能選擇。 <hex:02100103>※指定練習階段並不表示可以直接跳過其他階段。<hex:0249020103><hex:0248020103>
 10812,不可與其他任務同時搜索
 10813,以自由身份參加紛爭前線
@@ -10591,7 +10591,7 @@ int32,str
 12490,等級 <hex:022003E80203>
 12491,成績
 12492,關卡
-12493,<hex:022403E80203>. <hex:02281CFF17>ContentFinderCondition<hex:E8032A03>
+12493,<hex:022403E80203>. <hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
 12494,用時
 12495,<hex:022003E80203>:<hex:022403E80303>
 12496,加分項
@@ -11545,7 +11545,7 @@ int32,str
 13759,通過「<hex:02280AFF05>Item<hex:E8020103>」學習
 13760,無使用條件
 13761,完成任務「<hex:02280BFF06>Quest<hex:E8020103>」
-13762,完成副本任務「<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>」
+13762,完成副本任務「<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>」
 13763,通過「<hex:02280AFF05>Item<hex:E8040103>」學習<hex:02100103><hex:026103E80303><hex:02100103>用貨幣交換：<hex:02280CFF07>ObjStr<hex:E8020103>
 13764,通過「<hex:02280AFF05>Item<hex:E8020103>」學習<hex:02100103><hex:0208F0D1E5E95D01FFAF><hex:0209ABE95DFF37><hex:026105F63DEC8803><hex:02100103>用貨幣交換：黑渦團補給負責人<hex:FF37><hex:026105F63CA77203><hex:02100103>用貨幣交換：雙蛇黨補給負責人<hex:FF37><hex:026105F637984303><hex:02100103>用貨幣交換：恆輝隊補給負責人<hex:03><hex:FF1C>大國防聯軍軍票交換<hex:03>
 13765,綁定官方手機APP「隨身神典石」
@@ -12235,7 +12235,7 @@ int32,str
 14757,<hex:025004E8020303> <hex:022903EA0303>
 14758,動作播放中無法保存。
 14800,與其他玩家一同進入「<hex:022815FF10>InstanceContent<hex:E8020403>」
-14801,與非玩家同伴一同進入「<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>」
+14801,與非玩家同伴一同進入「<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>」
 14802,同伴選擇
 14803,<hex:02082AE1E80201FF22>平均品級不低於<hex:022003E80203>級<hex:FF01><hex:03><hex:020828E1E80301FF20><hex:02100103>品級同步：<hex:022003E80303>級<hex:FF01><hex:03>
 14804,劇情輔助器
@@ -12249,7 +12249,7 @@ int32,str
 14812,
 14813,顯示任務搜尋器說明。
 14814,可更換同伴
-14815,與非玩家同伴一同進入<hex:02281CFF17>ContentFinderCondition<hex:E8032A03>將在今後開放
+14815,與非玩家同伴一同進入<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>將在今後開放
 14816,將在今後的版本中開放。
 14851,隨身見聞錄
 14852,
