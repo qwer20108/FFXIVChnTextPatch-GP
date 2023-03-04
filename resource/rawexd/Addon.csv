@@ -8373,7 +8373,7 @@ int32,str
 9780,引導教學
 9781,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
 9782,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
-9783,<hex:02281CFF17>ContentFinderCondition<hex:E8022A03><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
+9783,<hex:02281CFF17>ContentFinderCondition<hex:E8032A03><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
 9784,<hex:022825FF0A>PlaceName<hex:FF17><hex:022813FF0E>TerritoryType<hex:E8030603><hex:0103><hex:02100103><hex:02280AFF05>Fate<hex:E8020103>
 9785,<hex:026103E80303><hex:02100103>對局：<hex:02280CFF07>ObjStr<hex:E8020103>
 9786,<hex:02281CFF17>TripleTriadCompetition<hex:E8020103><hex:02100103>特等獎
@@ -10591,7 +10591,7 @@ int32,str
 12490,等級 <hex:022003E80203>
 12491,成績
 12492,關卡
-12493,<hex:022403E80203>. <hex:02281CFF17>ContentFinderCondition<hex:E8022A03>
+12493,<hex:022403E80203>. <hex:02281CFF17>ContentFinderCondition<hex:E8032A03>
 12494,用時
 12495,<hex:022003E80203>:<hex:022403E80303>
 12496,加分項
