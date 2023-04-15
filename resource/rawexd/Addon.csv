@@ -1,4 +1,4 @@
-﻿key,0
+key,0
 #,Text
 offset,0
 int32,str
@@ -1330,7 +1330,7 @@ int32,str
 1358,COLOR PICKER
 1359,顏色選擇
 1360,<hex:020960E802FF1D><hex:022819FF14>GCRankLimsaMaleText<hex:E8030103><hex:FF20><hex:02281CFF17>GCRankGridaniaMaleText<hex:E8030103><hex:FF1D><hex:022819FF14>GCRankUldahMaleText<hex:E8030103><hex:03>
-1361,Extractable: <hex:02080BE1E80201FF02>Y<hex:FF02>N<hex:03>  Projectable: <hex:02080BE1E80301FF02>Y<hex:FF02>N<hex:03>  Desynthesizable: <hex:020813E1E80401FF0A><hex:022003E80503>.00<hex:FF02>N<hex:03>
+1361,精製魔晶石：<hex:02080BE1E80201FF02>可<hex:FF02>不可<hex:03>　武具投影：<hex:02080BE1E80301FF02>可<hex:FF02>不可<hex:03>　建議分解技能： <hex:020813E1E80401FF0A><hex:022003E80503>.00<hex:FF02>不可<hex:03>
 1362,？
 1363,???%
 1365,部隊
