@@ -1330,7 +1330,7 @@ int32,str
 1358,COLOR PICKER
 1359,顏色選擇
 1360,<hex:020960E802FF1D><hex:022819FF14>GCRankLimsaMaleText<hex:E8030103><hex:FF20><hex:02281CFF17>GCRankGridaniaMaleText<hex:E8030103><hex:FF1D><hex:022819FF14>GCRankUldahMaleText<hex:E8030103><hex:03>
-1361,Extractable: <hex:02080BE1E80201FF02>Y<hex:FF02>N<hex:03>  Projectable: <hex:02080BE1E80301FF02>Y<hex:FF02>N<hex:03>  Desynthesizable: <hex:020813E1E80401FF0A><hex:022003E80503>.00<hex:FF02>N<hex:03>
+1361,Extractable: <hex:020812E1E80201FF04>Y<hex:FF07>N<hex:03>　Projectable:<hex:020812E1E80301FF04>Y<hex:FF07>N<hex:03>　<hex:02083CE1E80401FF1F> Desynthesizable:<hex:022003E80503>.00<hex:FF16>N<hex:03>
 1362,？
 1363,???%
 1365,部隊
@@ -1603,7 +1603,7 @@ int32,str
 1656,套裝列表
 1657,物品：裝備/消耗品
 1658,物品：外部裝潢/內部裝潢/庭具/家具
-1659,Desynthesizable: <hex:02082EE1E80201FF24><hex:022003E80303>.00 (<hex:022B14FF12><hex:02280EFF09>ClassJob<hex:E8020103><hex:03>)<hex:FF03>No<hex:03>
+1659,<hex:020854E1E80201FF37>建議分解技能：<hex:022003E80303>.00 ［<hex:02280EFF09>ClassJob<hex:E8020103>］<hex:FF16>道具分解：不可<hex:03>
 1660,
 1661,★
 1662,●
@@ -1773,7 +1773,7 @@ int32,str
 1845,沒有能夠分解的道具。
 1846,確定要重置<hex:02280EFF09>ClassJob<hex:E8020103>的分解技能嗎？
 1847,分解收藏品
-1848,[Optimal Skill Rating for Desynthesis: <hex:022003E80203>.00]
+1848,[建議分解技能：<hex:022003E80203>.00]
 1849,僅顯示未讀郵件或含有未領取道具、金幣的郵件
 1850,<hex:021E020B03>次級指令
 1851,<hex:021E020B03>次級指令  <hex:021E020A03>返回
