@@ -1330,7 +1330,7 @@ int32,str
 1358,COLOR PICKER
 1359,顏色選擇
 1360,<hex:020960E802FF1D><hex:022819FF14>GCRankLimsaMaleText<hex:E8030103><hex:FF20><hex:02281CFF17>GCRankGridaniaMaleText<hex:E8030103><hex:FF1D><hex:022819FF14>GCRankUldahMaleText<hex:E8030103><hex:03>
-1361,精製魔晶石：<hex:020812E1E80201FF04>可<hex:FF07>不可<hex:03>　武具投影：<hex:020812E1E80301FF04>可<hex:FF07>不可<hex:03>　<hex:02083CE1E80401FF1F>建議分解技能：<hex:022003E80503>.00<hex:FF16>道具分解：不可<hex:03>
+1361,マテリア精製:<hex:02080EE1E80201FF04>○<hex:FF03>×<hex:03>　武具投影:<hex:02080EE1E80301FF04>○<hex:FF03>×<hex:03>　<hex:020831E1E80401FF20>分解適正スキル:<hex:022003E80503>.00<hex:FF0A>分解:×<hex:03>
 1362,？
 1363,???%
 1365,部隊
