@@ -137,7 +137,7 @@ public class ReplaceEXDF {
 			// edited
 			// this.percentPanel.percentShow(++fileCount / this.fileList.size());
 			percentPanel.percentShow((double)(++fileCount) / (double)fileList.size());
-			if (replaceFile.toUpperCase().endsWith(".EXH")) {
+			if (replaceFile.toUpperCase().endsWith(".EXH") && replaceFile.toUpperCase().equals("EXD/ADDON.EXH")) {
 				System.out.println("[ReplaceEXDF] Now File : " + replaceFile);
 				percentPanel.progressShow("正在替換文本：", replaceFile);
 				log.info("[ReplaceEXDF] Now File : " + replaceFile);
