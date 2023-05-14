@@ -37,15 +37,7 @@ public class ReplaceThread implements Runnable {
 		Logger log = Logger.getLogger("GPLogger");
 		
 		try {
-			
 			this.textPatchPanel.replaceButton.setEnabled(false);
-			/*
-			List<TeemoUpdateVo> diffFiles = UpdateUtil.diffChnFile(this.updates);
-			if (diffFiles.size() > 0 && !UpdateUtil.updateFile(diffFiles)) {
-				JOptionPane.showMessageDialog(null, "资源更新失败", "网络错误", 0);
-				System.exit(1);
-			} 
-			*/
 			PercentPanel percentPanel = new PercentPanel("漢化進度");
 			if (this.rfont.equals("1")) {
 				new ReplaceFont(this.resourceFolder + File.separator + "000000.win32.index", "resource" + File.separator + "font", percentPanel).replace();

@@ -4,7 +4,6 @@
 /bin/
 /docs/scripts/*
 /jre/
-/jre-old/
 /resource/font-*/
 /resource/rawexd-*/
 /resource/text/
@@ -13,6 +12,7 @@ notes.txt
 *.jar
 *.rar
 *.zip
+*.exe
 
 .gradle
 .idea
