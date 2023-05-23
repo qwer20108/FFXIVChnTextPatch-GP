@@ -10,16 +10,6 @@ import java.util.logging.SimpleFormatter;
 import name.yumao.ffxiv.chn.swing.ConfigApplicationPanel;
 import name.yumao.ffxiv.chn.swing.TextPatchPanel;
 import name.yumao.ffxiv.chn.util.res.Config;
-/*
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
-import name.yumao.ffxiv.chn.model.TeemoUpdateVo;
-import name.yumao.ffxiv.chn.swing.PercentPanel;
-import org.apache.http.client.fluent.Request;
-*/
 
 public class FFXIVPatchMain {
 	public static void main(String[] args) {
@@ -28,14 +18,38 @@ public class FFXIVPatchMain {
 		
 		// logger setup
 		Logger log = Logger.getLogger("GPLogger");
+		SimpleFormatter formatter = new SimpleFormatter() {
+		    private static final String format = "[%1$tF %1$tT] [%4$-7s] %2$s%5$s%6$s%n";
+
+		    @Override
+		    public synchronized String format(java.util.logging.LogRecord record) {
+		        return String.format(format,
+		                new java.util.Date(record.getMillis()),
+		                record.getMessage(),
+		                record.getSourceClassName(),
+		                record.getLevel().getLocalizedName(),
+		                record.getThrown() != null ? record.getThrown().getMessage() + System.lineSeparator() : "",
+		                getStackTrace(record.getThrown()));
+		    }
+
+		    private String getStackTrace(Throwable throwable) {
+		        if (throwable == null) {
+		            return "";
+		        }
+
+		        java.io.StringWriter sw = new java.io.StringWriter();
+		        java.io.PrintWriter pw = new java.io.PrintWriter(sw);
+		        throwable.printStackTrace(pw);
+		        return sw.toString();
+		    }
+		};
 		log.setUseParentHandlers(false);
 		log.setLevel(Level.ALL);
-		System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT] [%4$-7s] %5$s %n");
 		try {
 			FileHandler fh = new FileHandler("debug.log");
 			fh.setEncoding("UTF-8");
 			log.addHandler(fh);
-	        fh.setFormatter(new SimpleFormatter());  
+	        fh.setFormatter(formatter);  
 		} catch (IOException e) {  
 	        e.printStackTrace();  
 	    }
