@@ -17,7 +17,7 @@ int32,str,str
 12,TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_035,裝備上「上古武器·天極」後，<hex:02100103>參加指定區域的危命任務，<hex:02100103>可以偶爾獲得被稱為「魂晶」的道具。
 13,TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_036,把12種「魂晶」和「上古武器·天極」交給加爾贊之後，<hex:02100103>可以將武器強化為「上古武器·魂晶」。
 14,TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_100_036,不過，「騎士」需要準備劍與盾兩樣「上古武器·天極」。
-15,TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_037,另外，可以打開「日誌」的「已完成」，選擇「支線劇情任務」，<hex:02100103>在任務「尋找英雄的武器」中再次查看所需「魂晶」的情報。
+15,TEXT_CMNDEFRELICWEAPON020TRADE_00165_SYSTEM_000_037,另外，可以打開「日誌」的「已完成」，選擇「武器強化支線任務」，<hex:02100103>在任務「尋找英雄的武器」中再次查看所需「魂晶」的情報。
 16,TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_040,如果你能找來12種「魂晶」，<hex:02100103>那麼我就可以給你強化「上古武器」。
 17,TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_050,沒錯，就是這些……沒想到你真的收集齊了，幹得不錯！<hex:02100103>就讓我用這12種「魂晶」，<hex:02100103>給你的上古武器賦予更強的力量！
 18,TEXT_CMNDEFRELICWEAPON020TRADE_00165_JALZAHN_000_051,接下來就交給我的秘術吧……<hex:02100103>黃道武器啊，賜予我偉大的力量吧！<hex:02100103>……好了，收下吧。

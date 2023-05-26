@@ -1,29 +1,40 @@
 # 使用 macOS 版本
 
-原本的 binary 只有 windows 版，如果使用 macOS 可以參考下列步驟把漢化器跑起來
+原本的 binary 只有 windows 版，如果使用 macOS 可以參考下列步驟把漢化器跑起來。
+
+請注意，下列步驟皆需要在終端機（terminal）內操作。
 
 ## 準備環境
 
-> 推薦使用 [asdf](https://github.com/asdf-vm/asdf) 管理下列工具版本
+以下教學採用 `homebrew` 來設置環境，請參考 [Homebrew 網站進行 brew 指令的安裝](https://brew.sh/index_zh-tw)
 
-### JDK
+### 安裝 JDK
 
-這個專案需要 jdk 11 ，推薦使用 [Homebrew](https://brew.sh/index_zh-tw) 進行安裝。
+建置此專案需要 jdk 11 ，推薦使用 [Homebrew](https://brew.sh/index_zh-tw) 進行安裝。
 
 ```shell
 brew install openjdk@11
 ```
 
-### Gradle
+### 下載 Gradle
 
-編譯這個專案需要 gradle 6.x.x 的版本，可以[透過此連結下載](https://gradle.org/next-steps/?version=6.8.3&format=bin)。
-請記得下載的路徑，並將解壓縮後資料夾裡的 `bin` 路徑加入環境變數 `PATH` 中。
+編譯這個專案需要使用 `gradle` 工具的 6.x.x 版本，可以[透過此連結下載](https://gradle.org/next-steps/?version=6.8.3&format=bin)。
 
-### 其他函式庫 (csv parser)
+請記得下載的路徑，並將解壓縮後資料夾裡的 `bin` 路徑加入環境變數 `PATH` 中。（詳細操作在下方的「設定-設定環境變數-設定 gradle 路徑」段落）
 
-專案本身 build.gradle 中不包含， `com.univocity.parsers.csv` 這個 package 需要 [下載](https://oss.sonatype.org/service/local/repositories/releases/content/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar) ，並放到 `專案目錄/libs` 中。
+### 下載其他函式庫 (csv parser)
 
-**如不想下載此函式庫**，打開 `build.gradle` 編輯下列區塊
+#### 手動下載（目前此專案的版本）
+
+本專案的當前設定檔案 `build.gradle` 中不會幫使用者自動下載 `com.univocity.parsers.csv` 函式庫。
+
+請[點擊此處下載](https://oss.sonatype.org/service/local/repositories/releases/content/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar)。
+
+並將下載的檔案放置到 `<本專案目錄>/libs` 中。（若在專案目錄下找不到 `libs` 資料夾，請自行建立一個）
+
+#### 自動下載（選用）
+
+**如不想手動下載此函式庫**，打開 `<本專案目錄>/build.gradle` 並編輯下列區塊：
 
 ```gradle
 dependencies {
@@ -52,37 +63,21 @@ dependencies {
 
 #### 設定 openjdk 的路徑
 
-##### Mac (Intel)
-
 ```shell
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-```
-
-##### Mac (Apple Silicon)
-
-```shell
-export PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
-```
-
-##### 查詢 openjdk 安裝路徑
-
-如你不確定所使用的 mac 硬體，或相關的路徑資訊，可用 `brew info` 進行查詢。
-
-```shell
-brew info openjdk@11
+export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
 ```
 
 #### 設定 gradle 的路徑
 
-請將下面的 `/Users/xyz/Downloads/gradle-6.8.3` 改成你放置 gradle 解壓縮後的資料夾路徑。
+假設你把放置 gradle 資料夾的位置為 `/Users/使用者帳號/Downloads/gradle-6.8.3`
 
 ```shell
-export PATH="/Users/xyz/Downloads/gradle-6.8.3/bin:$PATH"
+export PATH="/Users/使用者帳號/Downloads/gradle-6.8.3/bin:$PATH"
 ```
 
 ### 執行程式
 
-在 Terminal 中，執行
+在 Terminal 中，切換到本專案資料夾內，再執行
 
 ```shell
 gradle run
@@ -90,7 +85,7 @@ gradle run
 
 ## 註解
 
-[^1] 也可以將指令放入 .bashrc 或 .zshrc 就可以不用每次都執行 (加入後需要重新啟動 Termial 才會生效)
+[^1] 可以將上面 `export` 相關指令放入 `.bashrc`(若使用 `bash`) 或 `.zshrc`(若使用 `zsh`) 就可以不用每次都執行 (加入後需要重新啟動 Termial 才會生效)
 
 ## One more thing
 

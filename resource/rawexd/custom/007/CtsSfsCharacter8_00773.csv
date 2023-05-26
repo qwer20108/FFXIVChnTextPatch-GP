@@ -29,8 +29,8 @@ int32,str,str
 24,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_000,如果想要調查委託品列表中的道具的獲得方法，<hex:02100103>就請活用次級指令與道具說明吧。
 25,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_001,能工巧匠分類的委託品，只需要在打開列表的狀態下，<hex:02100103>執行次級指令「搜索製作道具的配方」，<hex:02100103>就可以打開製作筆記，看到製作配方。
 26,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_002,採礦工或園藝工分類的委託品，只需要在打開列表的狀態下，<hex:02100103>執行次級指令「搜索採集方法」，<hex:02100103>就可以打開採集筆記，看到採集地點。
-27,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_003,
-28,TEXT_CTSSFSCHARACTER8_00773_GUIDE_102_003,
+27,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_003,捕魚人分類的委託品，<hex:02100103>在打開列表的狀態下執行次級指令「顯示入手場所」，<hex:02100103>就會顯示出可以獲得該種魚類的釣場或漁場。
+28,TEXT_CTSSFSCHARACTER8_00773_GUIDE_102_003,另外垂釣時推薦使用<hex:02280BFF05>Item<hex:F26FDA0103>作為釣餌。
 29,TEXT_CTSSFSCHARACTER8_00773_GUIDE_002_004,可以交給<hex:022812FF0D>ENpcResident<hex:E8020103>的道具<hex:02100103>分為能工巧匠、採礦工與園藝工、捕魚人三種，<hex:02100103>並且需要所有物品均為「收藏品」。
 30,TEXT_CTSSFSCHARACTER8_00773_GUIDE_003_000,製作委託品的必要材料，<hex:02100103>可以在舊薩雷安的露天集市前的素材商辛諾芙處購買。
 31,TEXT_CTSSFSCHARACTER8_00773_GUIDE_004_000,能工巧匠製作出來的產品的「收藏價值」<hex:02100103>會隨製作時物品品質的提高而上升。<hex:02100103>因此，盡量提高品質後做出成品是尤為重要的。
@@ -52,8 +52,8 @@ int32,str,str
 47,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_002,能工巧匠分類的委託品，只需要在打開列表的狀態下，<hex:02100103>執行次級指令「搜索製作道具的配方」，<hex:02100103>就可以打開製作筆記，看到製作配方。
 48,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_003,製作委託品的必要材料，<hex:02100103>可以在舊薩雷安的露天集市前的素材商辛諾芙處購買。
 49,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_004,採礦工或園藝工分類的委託品，只需要在打開列表的狀態下，<hex:02100103>執行次級指令「搜索採集方法」，<hex:02100103>就可以打開採集筆記，看到採集地點。
-50,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_005,
-51,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_100_005,
+50,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_005,捕魚人分類的委託品，<hex:02100103>在打開列表的狀態下執行次級指令「顯示入手場所」，<hex:02100103>就會顯示出可以獲得該種魚類的釣場或漁場。
+51,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_100_005,另外垂釣時推薦使用<hex:02280BFF05>Item<hex:F26FDA0103>作為釣餌。
 52,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_006,所交道具的收藏價值越高，交納時獲得的報酬就越豐厚。
 53,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_000_007,如果想知道「提高收藏價值的方法」，<hex:02100103>可以去找<hex:022812FF0D>ENpcResident<hex:E8020103>對話，<hex:02100103>選擇「詢問有關老主顧交易」，就可以查看了！
 54,TEXT_CTSSFSCHARACTER8_00773_TUTORIAL_001_000,交納委託品後，<hex:02100103><hex:022812FF0D>ENpcResident<hex:E8020103>開始對你產生信賴。
@@ -63,7 +63,7 @@ int32,str,str
 58,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_000,在魔法大學上課時，文具除了用來記筆記以外，<hex:02100103>還常常用來書寫咒文或術式。<hex:02100103>所以我們評價文具品質的時候主要看乙太傳導率的高低……
 59,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_001,要想學好魔法學，優秀的魔器是必不可少的。<hex:02100103>除了天球儀、幻具、賢具這些魔器之外，魔法藥也有很多種類。<hex:02100103>不知道你準備的是哪一類呀？
 60,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_002,雖說比起味道來，薩雷安人常常會更重視營養價值，<hex:02100103>不過通過與留學生的交流，也有人對異國文化的菜品產生了興趣。<hex:02100103>要是有保溫性能更好的餐盒就好了。
-61,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_003,魔法人偶會接收使用者的命令並做出相應的動作。<hex:02100103>所以大家總說評價人偶的唯一標準就是它的魔力敏感度如何。<hex:02100103>不過我覺得人偶的核心，還有它打扮的漂不漂亮都很重要呢……
+61,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_003,魔法人偶會接收使用者的命令並做出相應的動作。<hex:02100103>所以大家總說評價人偶的唯一標準就是它的魔力敏感度如何。<hex:02100103>不過我覺得人偶的核心，還有它打扮得漂不漂亮都很重要呢……
 62,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_001_004,在末日中受災的地區教育環境亟待改善。<hex:02100103>我打算捐贈一批盡可能耐用的物資，<hex:02100103>幫助當地那些失學的孩子們。
 63,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_002_000,在書寫咒文或術式時，<hex:02100103>不僅是墨水要具有優秀的乙太傳導性，<hex:02100103>羽毛筆也同樣不例外，你準備的羽毛筆會是什麼樣的呢？
 64,TEXT_CTSSFSCHARACTER8_00773_KNOWLEDGE_AMELIANCE_002_001,以水晶為代表的魔法觸媒自然是純度越高性能就越優秀。<hex:02100103>只不過一般人很難接觸到高純度的魔法觸媒呢……
@@ -186,7 +186,7 @@ int32,str,str
 181,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_001_001,可以領取老主顧交易的劇情任務了。<hex:02100103>和萊韋耶勒爾府的阿梅莉安絲對話即可接受任務。<hex:02100103>完成任務後，交貨列表將會更新。
 182,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_002_001,今後的委託將每週從至今為止的委託品中隨機選擇一次。
 183,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_002_002,和<hex:022812FF0D>ENpcResident<hex:E8020103>對話，<hex:02100103>選擇交納委託品，查看交貨列表。
-184,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_002_003,另外，支援學習用的發放品、支援學習用發放品的素材、灰白珊瑚<hex:02100103>可以得到較多報酬。<hex:02100103>如果列表中有上述物品，就積極交貨吧。
+184,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_002_003,另外，輔助學習用品、輔助學習用品的素材、灰白珊瑚<hex:02100103>可以得到較多報酬。<hex:02100103>如果列表中有上述物品，就積極交貨吧。
 185,TEXT_CTSSFSCHARACTER8_00773_AFTRANKUP_002_004,另外，今後可以對阿梅莉安絲進行武具投影了。
 186,TEXT_CTSSFSCHARACTER8_00773_RANKUP_AMELIANCE_001_000,<hex:022903EB0203>，感謝你一直以來的幫助。
 187,TEXT_CTSSFSCHARACTER8_00773_RANKUP_AMELIANCE_001_001,真是不可思議啊，<hex:02100103>居然和我家孩子最為重要的夥伴結下了這樣合作的關係。<hex:02100103>今後也請多多關照哦！
