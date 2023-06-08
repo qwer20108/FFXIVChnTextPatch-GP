@@ -1,4 +1,5 @@
 .DS_Store
+.settings/
 
 /backup/*
 /bin/
@@ -7,8 +8,8 @@
 /resource/font-*/
 /resource/rawexd-*/
 /resource/text/
+/test/
 debug.*
-notes.txt
 *.jar
 *.rar
 *.zip

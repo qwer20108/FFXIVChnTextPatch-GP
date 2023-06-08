@@ -53,6 +53,7 @@ public class FFXIVPatchMain {
 		} catch (IOException e) {  
 	        e.printStackTrace();  
 	    }
+		log.config("Java Version: " + System.getProperty("java.runtime.version"));
 		
 		if (isFFXIVFloder(path)) {
 			new TextPatchPanel();

@@ -199,10 +199,6 @@ public class TextPatchPanel extends JFrame implements ActionListener {
 				new ConfigApplicationPanel();
 			} 
 		} 
-		if (e.getSource() == this.bootButton) {
-			dispose();
-			new ClientLauncherPanel();
-		} 
 		if (e.getSource() == this.configButton) {
 			dispose();
 			new ConfigApplicationPanel();
