@@ -3,6 +3,7 @@ package name.yumao.ffxiv.chn.replace;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -185,7 +186,8 @@ public class ReplaceEXDF {
 								log.warning("File not exists: " + csvPath);
 								continue;
 							}
-							List<String[]> allRows = csvParser.parseAll(new FileReader(csvPath, StandardCharsets.UTF_8));
+							// List<String[]> allRows = csvParser.parseAll(new FileReader(csvPath, StandardCharsets.UTF_8));
+							List<String[]> allRows = csvParser.parseAll(new InputStreamReader(new FileInputStream(new File(csvPath)), "UTF-8"));
 							for (int i = 1; i < allRows.get(1).length; i++) {
 								offsetMap.put(Integer.valueOf((allRows.get(1))[i]), i - 1);
 							}						

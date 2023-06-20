@@ -24,7 +24,7 @@ plugins {
 
 sourceSets {
     main {
-        java.srcDir('src/main/java')
+		java.srcDir('src/main/java')
 		resources.srcDir('src/main/resources')
 		java.outputDir = file('build/bin')
 		output.resourcesDir = file('build/bin')
