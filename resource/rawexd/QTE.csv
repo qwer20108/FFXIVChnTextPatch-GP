@@ -20,4 +20,4 @@ int32,str,str,str,str,str
 15,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,對抗鎖死病,忍住鎖死病的極痛站起來！
 16,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,保持清醒,快速連擊按鈕保持意識清醒！
 17,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,死鬥,快速連擊按鈕壓制回去！
-18,,,,,
+18,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,曼德維爾橫跳,按下按鈕使出招式吧！
