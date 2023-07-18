@@ -287,14 +287,14 @@ int32,str,str,str,str,str
 282,,,,,
 283,,,,,
 284,輔助機602,,SE_Bt_Etc_Mount_YTCPod_call,SE_Bt_Etc_MadoWhistle_only,SE_Bt_Etc_Mount_YTCPod_bye
-285,,,,,
+285,月面躍動機,,SE_Bt_Etc_Mount_BuildSupporter_call,SE_Bt_Etc_MadoWhistle_only,SE_Bt_Etc_Mount_BuildSupporter_bye
 286,海島短吻鱷,,SE_Bt_Etc_Mount_Crocodile_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Crocodile_bye
 287,河馬車,,SE_Bt_Etc_Mount_HippoCar_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_HippoCar_bye
 288,巨魔,,SE_Bt_Etc_Mount_Troll_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Troll_bye
 289,,,SE_Bt_Etc_MadoWhistle,SE_Bt_Etc_MadoWhistle_only,SE_Bt_Etc_MadoBye
 290,,,,,
 291,醋蠍龍,,SE_Bt_Etc_Mount_Biter_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Biter_bye
-292,,,,,
+292,正統裂鉗蟹,,SE_Bt_Etc_Mount_HorseshoeCrab_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_HorseshoeCrab_bye
 293,藍羽猞猁,,SE_Bt_Etc_Mount_Maju_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Maju_bye
 294,大大柴,,SE_Bt_Etc_Mount_Shiba_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Shiba_bye
 295,,,SE_Bt_Etc_Mount_HippoCar_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_HippoCar_bye
@@ -310,8 +310,8 @@ int32,str,str,str,str,str
 305,炎靈獸,,SE_Bt_Etc_Mount_FlameBeast_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_FlameBeast_bye
 306,煞風猞猁,,SE_Bt_Etc_Mount_Maju_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Maju_bye
 307,,,SE_Bt_Etc_Mount_SpaceJellyfish_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_SpaceJellyfish_bye
-308,,,,,
-309,,,,,
+308,永恆,,SE_Bt_Etc_ToraWhistle,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_ToraBye
+309,,,SE_Bt_Etc_Mount_BuildSupporter_call,SE_Bt_Etc_MadoWhistle_only,SE_Bt_Etc_Mount_BuildSupporter_bye
 310,青磷氣球,,SE_Bt_Etc_Mount_Balloon_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_Balloon_bye
 311,安登三世,,SE_Bt_Etc_Mount_GrassFace_call,SE_Bt_Etc_GuuBooWhistle_only,SE_Bt_Etc_Mount_GrassFace_bye
 312,黑傑克號,,SE_Bt_Etc_Mount_BlackJack_call,SE_Bt_Etc_MadoWhistle_only,SE_Bt_Etc_Mount_BlackJack_bye
