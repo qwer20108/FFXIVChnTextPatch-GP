@@ -33,6 +33,28 @@ public class ReplaceThread implements Runnable {
 		this.rtext = Config.getProperty("ReplaText");
 	}
 	
+	public static boolean hasCsvFiles(String directoryPath) {
+		File directory = new File(directoryPath);
+		if (!directory.exists() || !directory.isDirectory()) {
+			return false;
+		}
+		
+		File[] files = directory.listFiles();
+		if (files != null) {
+			for (File file: files) {
+				if (file.isDirectory()) {
+					if (hasCsvFiles(file.getAbsolutePath())) {
+						return true;
+					}
+				} else if (file.isFile() && file.getName().toLowerCase().endsWith(".csv")) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	}
+	
 	public void run() {
 		Logger log = Logger.getLogger("GPLogger");
 		
@@ -45,7 +67,7 @@ public class ReplaceThread implements Runnable {
 				log.info("Skip replacing font files.");
 			}
 			if (this.rtext.equals("1")) {
-				if ((this.flang.equals("CSV")) && (new File("resource" + File.separator + "rawexd" + File.separator + "Achievement.csv")).exists()) {
+				if ((this.flang.equals("CSV")) && hasCsvFiles("resource" + File.separator + "rawexd")) {
 					log.info("Start patching with CSV files.");
 					(new ReplaceEXDF(this.resourceFolder + File.separator + "0a0000.win32.index", "resource" + File.separator + "rawexd" + File.separator + "Achievement.csv", percentPanel)).replace();
 				} else if (!(this.flang.equals("CSV")) && (new File("resource" + File.separator + "text" + File.separator + "0a0000.win32.index")).exists()) {

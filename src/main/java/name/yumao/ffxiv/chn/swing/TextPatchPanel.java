@@ -168,10 +168,23 @@ public class TextPatchPanel extends JFrame implements ActionListener {
 				// 備份原檔案
 				String resourceFolder = path + File.separator + "game" + File.separator + "sqpack" + File.separator + "ffxiv";
 				String[] resourceNames = { "000000.win32.dat0", "000000.win32.index", "000000.win32.index2", "0a0000.win32.dat0", "0a0000.win32.index", "0a0000.win32.index2" };
+				String backupFolder = "backup";
+				File backupFolderFile = new File(backupFolder);
+				
+				if (!backupFolderFile.exists()) {
+					if (backupFolderFile.mkdirs()) {
+						log.info("Success to create a backup folder.");
+					} else {
+						log.warning("Failed to create a backup folder. The game files will not be backed up.");
+					}
+				} else {
+					log.info("The backup folder already exists.");
+				}
+				
 				for (String resourceName : resourceNames) {
 					File resourceFile = new File(resourceFolder + File.separator + resourceName);
 					if (resourceFile.exists() && resourceFile.isFile())
-						FileUtil.copyTo(resourceFile, "backup" + File.separator + resourceFile.getName()); 
+						FileUtil.copyTo(resourceFile, backupFolder + File.separator + resourceFile.getName()); 
 				}
 				
 				ReplaceThread replaceThread = new ReplaceThread(resourceFolder, this);

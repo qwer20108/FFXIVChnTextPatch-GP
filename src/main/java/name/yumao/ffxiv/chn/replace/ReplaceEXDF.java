@@ -5,11 +5,8 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -34,7 +31,6 @@ import name.yumao.ffxiv.chn.model.SqPackDatFile;
 import name.yumao.ffxiv.chn.model.SqPackIndex;
 import name.yumao.ffxiv.chn.model.SqPackIndexFile;
 import name.yumao.ffxiv.chn.model.SqPackIndexFolder;
-// import name.yumao.ffxiv.chn.model.TeemoUpdateVo;
 import name.yumao.ffxiv.chn.swing.PercentPanel;
 import name.yumao.ffxiv.chn.util.ArrayUtil;
 import name.yumao.ffxiv.chn.util.EXDFUtil;
@@ -91,10 +87,8 @@ public class ReplaceEXDF {
 			String patternStr = this.slang.equals("EN") ? "teemopattern" : "^[a-zA-Z0-9_'./\\s]*$";
 			pattern = Pattern.compile(patternStr);
 		}
-		System.out.println("[ReplaceEXDF] Initializing File List...");
 		log.info("[ReplaceEXDF] Initializing File List...");
 		initFileList();
-		System.out.println("[ReplaceEXDF] Loading Index File...");
 		log.info("[ReplaceEXDF] Loading Index File...");
 		HashMap<Integer, SqPackIndexFolder> indexSE = (new SqPackIndex(this.pathToIndexSE)).resloveIndex();
 		HashMap<Integer, SqPackIndexFolder> indexCN = null;
@@ -104,7 +98,6 @@ public class ReplaceEXDF {
 		} else {
 			log.info("[ReplaceEXDF] Skipped IndexCN");
 		}
-		System.out.println("[ReplaceEXDF] Loading Index Complete");
 		log.info("[ReplaceEXDF] Loading Index Complete");
 		LERandomAccessFile leIndexFile = new LERandomAccessFile(this.pathToIndexSE, "rw");
 		LERandomAccessFile leDatFile = new LERandomAccessFile(this.pathToIndexSE.replace("index", "dat0"), "rw");
@@ -123,13 +116,31 @@ public class ReplaceEXDF {
 				this.transMap = (new EXDFUtil(this.pathToIndexSE, this.pathToIndexCN, this.fileList)).transMap(this.transMap);
 				log.info("[ReplaceEXDF] Loading transMap Complete");
 			} catch (Exception exception) {}
-			skipFiles = Arrays.asList(Config.getProperty("SkipFiles").toLowerCase().split("[|]"));
 		}
+		skipFiles = Arrays.asList(Config.getProperty("SkipFiles").toLowerCase().split("[|]"));
 		// 根據傳入的檔案進行遍歷
 		int fileCount = 0;
 		for (String replaceFile : this.fileList) {
 			percentPanel.percentShow((double)(++fileCount) / (double)fileList.size());
 			if (replaceFile.toUpperCase().endsWith(".EXH")) {
+				String replaceFileName = replaceFile.substring(0, replaceFile.lastIndexOf(".")).toLowerCase();
+				if (skipFiles.contains(replaceFileName)) {
+					System.out.println(replaceFileName);
+					log.info(replaceFileName + " in skipFiles. Skip this part.");
+					continue;
+				} else {
+					boolean skipThis = false;
+					for (String skipKey: skipFiles) {
+						 if (replaceFileName.startsWith(skipKey + "/")) {
+							 skipThis = true;
+							 break;
+						 }
+					}
+					if (skipThis) {
+						log.info(replaceFileName + " in skipFiles. Skip this part.");
+						continue;
+					}
+				}
 				percentPanel.progressShow("正在替換文本：", replaceFile);
 				log.info("Read :    " + replaceFile);
 				// 準備好檔案目錄名和檔案名
@@ -274,7 +285,8 @@ public class ReplaceEXDF {
 									chunk.writeInt(newFFXIVString.length);
 									// 更新文本內容
 									// EXD/warp/WarpInnUldah.EXH -> exd/warp/warpinnuldah_xxxxx_xxxxx
-									String transKey = replaceFile.substring(0, replaceFile.lastIndexOf(".")).toLowerCase() + "_" + String.valueOf(listEntryIndex) + "_" + String.valueOf(stringCount);
+									
+									String transKey = replaceFileName + "_" + String.valueOf(listEntryIndex) + "_" + String.valueOf(stringCount);
 									if (this.csv) {
 										// added CSV mode
 										// `replaceFile` is the filename like `quest` or `quest/000/ClsHrv001_00003`
@@ -342,7 +354,7 @@ public class ReplaceEXDF {
 										// 2. questMap
 										// 如果transkey有在任務map裡面找到且其長度>0，則引出其值
 										newFFXIVString = ArrayUtil.append(newFFXIVString, convertString(this.exQuestMap.get(transKey)));
-									} else if (skipFiles.contains(replaceFile.substring(0, replaceFile.lastIndexOf(".")).toLowerCase())) {
+									} else if (skipFiles.contains(replaceFileName)) {
 										// 3. SkipFiles
 										newFFXIVString = ArrayUtil.append(newFFXIVString, jaBytes);
 									} else if (cnEXHFileAvailable && cnEXDFileAvailable && cnEntryAvailable && jaBytes.length > 0 && datasetMap
