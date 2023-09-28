@@ -33,7 +33,7 @@ public class CsvFilePanel extends JFrame implements ActionListener {
     public CsvFilePanel(String targetPath) {
         setTitle("選擇漢化範圍");
         setSize(400, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         csvPanel.setLayout(new BoxLayout(csvPanel, BoxLayout.Y_AXIS));
 
         selectAllCheckBox.addActionListener(this);
